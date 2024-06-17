@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DelishDrop - Home</title>
+    <link rel="shortcut icon" href="./Asset/DelishDrop.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+    <style>
+        @media only screen and (max-width: 1050px) {
+            .sidebarleft {
+                padding: 1rem 0;
+                background-color: transparent;
+                color: #fff;
+            }
+            .sidebarleft i{
+                font-size: 1rem;
+            }
+            .sidelmiddle,
+            .sidelbottom {
+                display: none;
+            }
+
+            .nav button {
+                display: none;
+            }
+
+            .htop{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .hleft {
+                width:unset;
+                height: 30vh;
+                flex-direction: column;
+                justify-content: unset;
+                align-items: center;
+                margin: 0;
+            }
+            .hleft img{
+                width: 10rem;
+            }
+            .hleft .hlimgs{
+                width:20vw;
+                flex-direction: row;
+                margin: 1rem auto;
+            }
+
+            .hlimgs img{
+                border-radius: 0%;
+            }
+
+            .hright {
+                width: unset;
+            }
+
+            .hright-elem{
+                font-size: 2rem;
+            }
+
+            .hrightbtn {
+                display: block;
+            }
+            .hrightbtn button{
+                width: unset;
+                padding: 0.5rem 2rem;
+                font-size: 1.4rem;
+            }
+
+            .hbottom {
+                justify-content: unset;
+                width: 95%;
+            }
+
+            .hbottom::-webkit-scrollbar {
+                width: 0px;
+            }
+            .hfoods {
+                margin: 0 2rem;
+                padding: 0;
+            }
+
+            .hfoods img {
+                width: 2rem;
+                object-fit: cover;
+                border-radius: 0%
+            }
+
+            .hfoods button {
+                width: max-content;
+            }
+        }
+    </style>
+</head>
+
+<body class="max-h-[100vh] max-w-[100vw] bg-gradient-to-r from-[#ff0000] to-[#8c1616] font-body">
+    <!-- Navbar -->
+    <div class="navbar h-[10vh] flex justify-center">
+        <div class="w-[85%] flex justify-between items-center">
+            <div class="navlogo flex justify-between items-center cursor-pointer">
+                <img class="w-14" src="./Asset/DelishDrop.png">
+                <h1 class="text-white m-2 text-[1.4rem] font-extrabold">Delish<span class="text-yellow-400">Drop</span>
+                </h1>
+            </div>
+            <div class="nav flex items-center">
+                <button
+                    class="text-white m-4 p-1 px-3 rounded-[10px] bg-yellow-400 border-2 border-yellow-400 hover:scale-105">Sign
+                    Up</button>
+                <button
+                    class="text-yellow-400 m-3 p-1 px-3 rounded-[10px] border-2 border-yellow-400 hover:scale-105">Log
+                    In</button>
+                <h2 class="text-white ml-8 cursor-pointer hover:scale-105"><i class="fa-solid fa-cart-shopping"></i>
+                    View Cart</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebarleft absolute top-0 left-0 h-screen w-10 bg-yellow-400 flex flex-col items-center overflow-hidden z-50"
+            id="sidebarleft">
+            <div class="sideltop w-[100%] h-8 m-[0.8rem] text-2xl flex justify-center" id="sideltop">
+                <i class="fa-solid fa-bars cursor-pointer hover:scale-105" id="hamburger"></i>
+            </div>
+            <div class="sidelmiddle h-[50%] w-[100%] flex flex-col items-center justify-around relative uppercase"
+                id="sidelmiddle">
+                <div
+                    class="sidel flex items-center relative h-[15vh] border-cyan-950 hover:border-2 cursor-pointer hover:bg-[burlywood] hover:rounded-[50%]">
+                    <i class="fa-solid fa-house absolute w-[100%] flex justify-center hover:scale-110"></i>
+                    <p class="ml-[7rem]">Home</p>
+                </div>
+                <div
+                    class="sidel flex items-center relative h-[15vh] border-cyan-950 hover:border-2 cursor-pointer hover:bg-[burlywood] hover:rounded-[50%]">
+                    <i class="fa-solid fa-user absolute w-[100%] flex justify-center hover:scale-110"></i>
+                    <p class="ml-[7rem]">profile</p>
+                </div>
+                <div
+                    class="sidel flex items-center relative h-[15vh] border-cyan-950 hover:border-2 cursor-pointer hover:bg-[burlywood] hover:rounded-[50%]">
+                    <i class="fa-solid fa-location-dot absolute w-[100%] flex justify-center hover:scale-110"></i>
+                    <p class="ml-[7rem]">address</p>
+                </div>
+                <div
+                    class="sidel flex items-center relative h-[15vh] border-cyan-950 hover:border-2 cursor-pointer hover:bg-[burlywood] hover:rounded-[50%]">
+                    <i class="fa-solid fa-wallet absolute w-[100%] flex justify-center hover:scale-110"></i>
+                    <p class="ml-[7rem]">payment</p>
+                </div>
+                <div
+                    class="sidel flex items-center relative h-[15vh] border-cyan-950 hover:border-2 cursor-pointer hover:bg-[burlywood] hover:rounded-[50%]">
+                    <i class="fa-solid fa-trophy absolute w-[100%] flex justify-center hover:scale-110"></i>
+                    <p class="ml-[7rem]">rewards</p>
+                </div>
+                <div
+                    class="sidel flex items-center relative h-[15vh] border-cyan-950 hover:border-2 cursor-pointer hover:bg-[burlywood] hover:rounded-[50%]">
+                    <i class="fa-solid fa-heart absolute w-[100%] flex justify-center hover:scale-110"></i>
+                    <p class="ml-[7rem]">liked</p>
+                </div>
+            </div>
+            <div class="sidelbottom h-[35%] w-[100%] flex items-end">
+                <div class="overflow-hidden flex items-center relative h-[10vh] w-[100%] border-cyan-950 hover:border-y-2 hover:border-r-2 cursor-pointer hover:bg-[burlywood]"
+                    id="sidelbottom">
+                    <i
+                        class="fa-solid fa-gear cursor-pointer absolute w-[100%] flex justify-center hover:scale-110 hover:rotate-180 transition-all"></i>
+                    <p class="ml-[6rem]">SETTINGS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home -->
+    <div class="home flex flex-col items-center">
+        <div class="htop w-[100%] flex">
+            <div class="hleft h-[55vh] w-[55%] mb-4 flex justify-end">
+                <img src="https://image.freepik.com/free-photo/close-up-view-tasty-burger-yellow-background_23-2148302472.jpg"
+                    class="main-img w-[31vw] rounded-3xl cursor-pointer hover:scale-[1.01] object-cover">
+                <div class="hlimgs w-[10vw] m-4 flex flex-col gap-2 justify-center">
+                    <img src="https://image.freepik.com/free-photo/close-up-view-tasty-burger-yellow-background_23-2148302472.jpg"
+                        class="small-img rounded-3xl cursor-pointer hover:scale-105">
+                    <img src="https://c0.wallpaperflare.com/preview/947/720/920/background-flat-design-food-foodie.jpg"
+                        class="small-img rounded-3xl cursor-pointer hover:scale-105">
+                    <img src="https://www.wallpaperbetter.com/wallpaper/1015/836/40/food-yellow-1080P-wallpaper.jpg"
+                        class="small-img rounded-3xl cursor-pointer hover:scale-105">
+                </div>
+            </div>
+            <div class="hright w-[40%] flex justify-center items-center">
+                <div class="hright-elem text-center text-4xl text-white">
+                    <h2>Order <span class="text-yellow-400">Delicious</span> Food</h2>
+                    <h2>with Delish<span class="text-yellow-400">Drop</span></h2>
+                    <p class="font-[system-ui] font-thin"><span class="text-yellow-400 font-normal">50% Off</span> On
+                        First Order</p>
+                    <div class="hrightbtn my-4 hidden">
+                        <button
+                            class="text-white w-[10vw] text-[2vw] rounded-[10px] bg-yellow-400  hover:text-yellow-400 hover:bg-transparent border-2 border-yellow-400">Sign
+                            Up</button>
+                        <button
+                            class="text-yellow-400 w-[10vw] text-[2vw] rounded-[10px] border-2 border-yellow-400 hover:text-white hover:bg-yellow-400">Log
+                            In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hbottom w-[80%] bg-[brown] p-2 rounded-3xl flex justify-around overflow-auto">
+            <div class="hfoods w-[10%] text-center flex flex-col items-center text-white">
+                <img src="https://inspirationseek.com/wp-content/uploads/2016/02/Delicious-Pizza-Pictures.jpg"
+                    class="rounded-3xl h-[12vh] cursor-pointer hover:scale-110">
+                <p class="text-2xl">10$</p>
+                <button
+                    class="bg-yellow-400 p-2 rounded-xl hover:text-yellow-400 hover:bg-transparent border-2 border-yellow-400">Buy
+                    Now</button>
+            </div>
+            <div class="hfoods w-[10%] text-center flex flex-col items-center text-white">
+                <img src="https://wallpapercave.com/wp/VbtY9vg.jpg"
+                    class="rounded-3xl h-[12vh] cursor-pointer hover:scale-110">
+                <p class="text-2xl">10$</p>
+                <button
+                    class="bg-yellow-400 p-2 rounded-xl hover:scale-105 hover:text-yellow-400 hover:bg-transparent border-2 border-yellow-400">Buy
+                    Now</button>
+            </div>
+            <div class="hfoods w-[10%] text-center flex flex-col items-center text-white">
+                <img src="http://wallpapercave.com/wp/pEUhSE5.jpg"
+                    class="rounded-3xl h-[12vh] cursor-pointer hover:scale-110">
+                <p class="text-2xl">10$</p>
+                <button
+                    class="bg-yellow-400 p-2 rounded-xl hover:scale-105 hover:text-yellow-400 hover:bg-transparent border-2 border-yellow-400">Buy
+                    Now</button>
+            </div>
+            <div class="hfoods w-[10%] text-center flex flex-col items-center text-white">
+                <img src="https://offloadmedia.feverup.com/secretlosangeles.com/wp-content/uploads/2020/05/22093453/montys-e1590707262192-1024x721.jpg"
+                    class="rounded-3xl h-[12vh] cursor-pointer hover:scale-110">
+                <p class="text-2xl">10$</p>
+                <button
+                    class="bg-yellow-400 p-2 rounded-xl hover:scale-105 hover:text-yellow-400 hover:bg-transparent border-2 border-yellow-400">Buy
+                    Now</button>
+            </div>
+            <div class="hfoods w-[10%] text-center flex flex-col items-center text-white">
+                <img src="https://www.eatthis.com/wp-content/uploads/sites/4/media/images/ext/520765216/classic-beef-burger.jpg?resize=272"
+                    class="rounded-3xl h-[12vh] cursor-pointer hover:scale-110">
+                <p class="text-2xl">10$</p>
+                <button
+                    class="bg-yellow-400 p-2 rounded-xl hover:scale-105 hover:text-yellow-400 hover:bg-transparent border-2 border-yellow-400">Buy
+                    Now</button>
+            </div>
+            <div class="hfoods w-[10%] text-center flex flex-col items-center text-white">
+                <img src="http://www.pixelstalk.net/wp-content/uploads/2016/08/Desktop-Food-HD-Photos.jpg"
+                    class="rounded-3xl h-[12vh] cursor-pointer hover:scale-110">
+                <p class="text-2xl">10$</p>
+                <button
+                    class="bg-yellow-400 p-2 rounded-xl hover:scale-105 hover:text-yellow-400 hover:bg-transparent border-2 border-yellow-400">Buy
+                    Now</button>
+            </div>
+            <div class="hfoods w-[10%] text-center flex flex-col items-center text-white">
+                <img src="https://www.godubrovnik.com/wp-content/uploads/pizza.jpg"
+                    class="rounded-3xl h-[12vh] cursor-pointer hover:scale-110">
+                <p class="text-2xl">10$</p>
+                <button
+                    class="bg-yellow-400 p-2 rounded-xl hover:scale-105 hover:text-yellow-400 hover:bg-transparent border-2 border-yellow-400">Buy
+                    Now</button>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+<script>
+    let sidebarLeft = document.getElementById("sidebarleft")
+    let sideltop = document.getElementById("sideltop")
+    let sidelmiddle = document.getElementById("sidelmiddle")
+    let sidel = document.querySelectorAll(".sidel")
+    let sidelbtmclass = document.querySelector(".sidelbottom")
+    let sidelbottom = document.getElementById("sidelbottom")
+    let hamburger = document.getElementById("hamburger")
+
+    let clicked = false;
+    function hamburgerEvent() {
+        if (!clicked) {
+            sidebarLeft.style.width = "15rem"
+            sidebarLeft.style.alignItems = "flex-start"
+            sidebarLeft.style.padding = "0 0.7rem"
+            sideltop.style.justifyContent = "flex-end"
+            sideltop.style.margin = "0.8rem 0"
+            sidelmiddle.style.left = "-38%"
+            sidelbottom.style.left = "-35%"
+            sidelbtmclass.style.width = "unset"
+            sidel.forEach(function (x) {
+                x.addEventListener("mouseenter", function () {
+                    x.style.padding = "0 0.5rem"
+                    x.style.borderRadius = "0"
+                })
+                x.addEventListener("mouseleave", function () {
+                    x.style.padding = "0"
+                    x.style.borderRadius = "50%"
+                })
+            })
+            clicked = true;
+        } else {
+            hamburger.style.transform = "rotate(0deg)"
+            sidebarLeft.style.width = "2.5rem"
+            sidebarLeft.style.alignItems = "center"
+            sidebarLeft.style.padding = "0"
+            sideltop.style.justifyContent = "center"
+            sideltop.style.margin = "0.8rem"
+            sidelmiddle.style.left = "0%"
+            sidelbottom.style.left = "0%"
+            sidelbtmclass.style.width = "100%"
+            sidel.forEach(function (x) {
+                x.addEventListener("mouseenter", function () {
+                    x.style.padding = "0"
+                    x.style.borderRadius = "50%"
+                })
+            })
+            clicked = false;
+        }
+    }
+
+    hamburger.addEventListener('click', function () {
+        hamburgerEvent()
+
+        const mediaQuery = window.matchMedia('(max-width: 1050px)')
+        if (mediaQuery.matches) {
+            if (clicked) {
+                sidebarLeft.style.background = "rgb(250 204 21 / var(--tw-bg-opacity))"
+                sidelmiddle.style.display = "flex"
+                sidelbtmclass.style.display = "flex"
+            } else {
+                sidebarLeft.style.background = "transparent"
+                sidelmiddle.style.display = "none"
+                sidelbtmclass.style.display = "none"
+            }
+        }
+
+    })
+
+    let mainImg = document.querySelector(".main-img")
+    var smallImg = document.getElementsByClassName("small-img")
+
+    smallImg[0].onclick = function () {
+        mainImg.src = smallImg[0].src
+    }
+    smallImg[1].onclick = function () {
+        mainImg.src = smallImg[1].src
+    }
+    smallImg[2].onclick = function () {
+        mainImg.src = smallImg[2].src
+    }
+</script>
+
+</html>
